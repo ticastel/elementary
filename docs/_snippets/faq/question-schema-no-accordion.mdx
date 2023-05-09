@@ -8,4 +8,5 @@ Here is an example configuration, that creates a schema with the suffix '_elemen
 models:
   elementary:
     +schema: elementary
+    +enabled: "{{ target.name == 'prod' }}"
 ```
